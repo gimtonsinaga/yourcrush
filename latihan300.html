@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        display:block;
+        margin-top:10px;
+    }
+</style>
+<body>
+   <input type="text" placeholder="Masukkan nama bisa jadi kamulah orangnya??" id="input">
+   <button type="submit" id="check">Submit</button>
+   <p id="result"></p>
+   <script>
+    const input=document.getElementById('input')
+    const button=document.getElementById('check')
+    const result=document.getElementById('result')
+    button.addEventListener('click', ()=>{
+          const valueInput=input.value.toLowerCase();
+          if(valueInput=='sarah' || valueInput=='wardah'){
+            result.innerText='Hai, yes you are the person, gua gamon jir jujur ae wkwkw, kalau gk keberatan nih seandainya gua nanti suatu saat nembak lu lagi dengan keadaan yang lebih baik, lu mau gk? dan kalau iya boleh gk bales ke aku iyaaa atau mungkin atau ya yang paling terburuknya no'
+          }else{
+            result.innerText='Kamu bukanlah orangnya, this is just for my favourite person.(if you want to see the massage what i want to send to her you can guess her name)'
+          }
+    })
+   </script>
+</body>
+</html>
